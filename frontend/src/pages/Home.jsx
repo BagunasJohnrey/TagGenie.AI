@@ -17,7 +17,8 @@ function Home() {
     setResult(null);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/user/tags", {
+      // const res = await axios.post("http://localhost:5000/api/user/tags", {
+      const res = await axios.post("https://tag-genie-ai-backend.vercel.app/api/user/tags", {
         title,
         description,
       });
